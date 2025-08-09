@@ -122,11 +122,12 @@ This project is licensed under the MIT License.
 Save this as `README.md` in your project root.
 
 ## Running project from Command Line
--  To run your Spring Boot project from the command prompt on Windows:  
-  -  Build the project using Maven:  
-    - mvn clean install
-run the application:  
+**-  To run your Spring Boot project from the command prompt on Windows:**  
+  - **Build the project using Maven:**  
+        mvn clean install
+
+  - **Run the application:**  
       mvn spring-boot:run
-      Or, if you have a packaged JAR (after build), use:  
-      java -jar target/your-app-name.jar
-      Replace your-app-name.jar with your actual JAR file name in the target folder.
+
+  - If you have a packaged JAR (after build), use:  
+      java -jar target/springboot-mongodb-example.jar
