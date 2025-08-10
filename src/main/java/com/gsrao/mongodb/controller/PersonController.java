@@ -5,6 +5,11 @@ import com.gsrao.mongodb.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * PersonController handles HTTP requests related to Person operations.
+ * It provides endpoints for creating, retrieving, updating, and deleting Person records.
+ */
+@CrossOrigin(origins = "http://localhost:8080", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/persons")
 public class PersonController {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person API Client</title>
+    <link rel="stylesheet" href="file:///D:/DEVWORK/INTELLIJ-PROJECTS/springboot-mongodb-example/src/web/styles.css">
+</head>
+<body>
+<h1>Person API Client</h1>
+<section>
+    <h2>Create Person</h2>
+    <form id="createForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="id" placeholder="Id" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="mobileNo" placeholder="Mobile No" required>
+        <button type="submit">Create</button>
+    </form>
+    <div id="createResult"></div>
+</section>
+<section>
+    <h2>Get Person by ID</h2>
+    <input type="text" id="getId" placeholder="Person ID">
+    <button onclick="getPersonById()">Get</button>
+    <div id="getResult"></div>
+</section>
+<section>
+    <h2>List All Persons</h2>
+    <button onclick="listAllPersons()">List All</button>
+    <div id="listResult"></div>
+</section>
+<section>
+    <h2>Delete Person by ID</h2>
+    <input type="text" id="deleteId" placeholder="Person ID">
+    <button onclick="deletePersonById()">Delete</button>
+    <div id="deleteResult"></div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
